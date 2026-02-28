@@ -11,17 +11,6 @@ export const Schedules: CollectionConfig = {
   },
   fields: [
     {
-      name: 'date',
-      type: 'date',
-      label: '日付',
-      required: true,
-      admin: {
-        date: {
-          pickerAppearance: 'dayOnly',
-        },
-      },
-    },
-    {
       name: 'store',
       type: 'select',
       label: '店舗',
@@ -31,8 +20,16 @@ export const Schedules: CollectionConfig = {
         { label: '店舗B', value: 'store_b' },
         { label: '店舗C', value: 'store_c' },
       ],
+    },
+    {
+      name: 'date',
+      type: 'date',
+      label: '日付',
+      required: true,
       admin: {
-        position: 'sidebar',
+        date: {
+          pickerAppearance: 'dayOnly',
+        },
       },
     },
     {

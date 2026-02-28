@@ -185,8 +185,8 @@ export interface Cast {
  */
 export interface Schedule {
   id: number;
-  date: string;
   store: 'store_a' | 'store_b' | 'store_c';
+  date: string;
   cast: number | Cast;
   updatedAt: string;
   createdAt: string;
@@ -328,8 +328,8 @@ export interface CastsSelect<T extends boolean = true> {
  * via the `definition` "schedules_select".
  */
 export interface SchedulesSelect<T extends boolean = true> {
-  date?: T;
   store?: T;
+  date?: T;
   cast?: T;
   updatedAt?: T;
   createdAt?: T;
